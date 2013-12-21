@@ -45,4 +45,4 @@ This pattern lets me create additional pre-processing rules such as parsing bbco
 
 #Basic Layout
 
-<img src="https://raw.github.com/stefanil/org.devel.skills.play2/master/layout/layout00.svg" />
+<img src="https://raw.github.com/stefanil/org.devel.skills.play2/master/layout/layout00.png" />
