@@ -1,4 +1,38 @@
 org.devel.play2
 ===============
 
-Online Presentation
+This is my online presentation.
+
+#Features
+
+##Technical Features
+
+###Generate Content from Markdown
+I've created the below InputFormat.scala file:
+
+<code>
+abstract trait InputFormat {
+  def format(source: String): String
+}
+
+object LineBreakFormatter extends InputFormat {
+  def format(source: String) = source.replaceAll("\n", "<br/>")
+}
+
+object HtmlEscapeFormatter extends InputFormat {
+  def format(source: String) = play.api.templates.HtmlFormat.escape(source).body
+}
+
+object InputFormats {
+  private val formaters = HtmlEscapeFormatter :: LineBreakFormatter :: Nil
+  def format(source: String) = formaters.foldLeft(source)((result, formatter) => formatter.format(result))
+}
+</code>
+
+Then in the template I do:
+
+@Html(InputFormats.format(content))
+
+This pattern lets me create additional pre-processing rules such as parsing bbcode, escaping emails to prevent spam etc just by implementing a new InputFormat trait and adding it to the list. My usercase is simple so InputFormats is a simple helper object, if I was to extend this I'd probably make InputFormats a class InputFormats(Seq[InputFormat]) so I can have different pre-processing rules on user content depending where it is on the site.
+
+Fairly new to Scala, that foldLeft is unkown magic to me, not sure if anyones got any further suggestions. It'd be nice if I could loose the @Html bit and create a global template function such as @Format which delegates to the InputFormats object.
