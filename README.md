@@ -40,5 +40,3 @@ Then in the template I do:
 </code>
 
 This pattern lets me create additional pre-processing rules such as parsing bbcode, escaping emails to prevent spam etc just by implementing a new InputFormat trait and adding it to the list. My usercase is simple so InputFormats is a simple helper object, if I was to extend this I'd probably make InputFormats a class InputFormats(Seq[InputFormat]) so I can have different pre-processing rules on user content depending where it is on the site.
-
-Fairly new to Scala, that foldLeft is unkown magic to me, not sure if anyones got any further suggestions. It'd be nice if I could loose the @Html bit and create a global template function such as @Format which delegates to the InputFormats object.
