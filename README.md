@@ -1,11 +1,13 @@
-org.devel.play2
+org.devel.skills.play2
 ===============
 
-This is my online presentation.
+This is an online presentation for presenting my skills.
 
 #Features
 
 ##Technical Features
+
+###Built on Play Framework v2.2.1
 
 ###Generate Content from Markdown
 I've created the below InputFormat.scala file:
