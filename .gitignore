@@ -1,10 +1,14 @@
+# FOLDERS
+bin
 logs
 project/project
 project/target
 target
+.target
 tmp
 .history
 dist
+# FILES
 /.idea
 /*.iml
 /out
@@ -13,4 +17,6 @@ dist
 /.project
 /RUNNING_PID
 /.settings
+/.gitignore~
+/.cache
 

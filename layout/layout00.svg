@@ -751,14 +751,14 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="470.99462"
-     inkscape:cy="387.00334"
+     inkscape:cx="499.99462"
+     inkscape:cy="64.665"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1676"
-     inkscape:window-height="1025"
-     inkscape:window-x="0"
+     inkscape:window-width="1362"
+     inkscape:window-height="698"
+     inkscape:window-x="1680"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
      showguides="false"
@@ -827,7 +827,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -1228,7 +1228,7 @@
          id="tspan4532"
          x="20"
          y="1036.3622"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;fill-opacity:1;font-family:Arial;-inkscape-font-specification:Arial">© 2014 stefan illgen</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;fill-opacity:1;font-family:Arial;-inkscape-font-specification:Arial">© 2014 stefan illgen        built with play framework 2.2.1</tspan></text>
     <rect
        style="fill:url(#linearGradient5064);fill-opacity:1.0;stroke:none"
        id="rect4133-6-5"
