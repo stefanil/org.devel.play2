@@ -12,6 +12,16 @@ This is an online presentation for presenting my skills.
 * built using Scala programming language in frontend and backend
 
 ###Generate Content from Markdown
+
+####Approach 0: Reuse an existing Markdown Processor
+* Java
+  * <a href="https://code.google.com/p/markdown4j/">Markdown4J</a>
+* Scala
+  * <a href="https://github.com/planet42">Laika</a>
+  * <a href="https://github.com/chirino/scalamd">ScalaMD</a>
+* see also <a href="http://stackoverflow.com/questions/19784525/recommended-java-scala-library-for-converting-markdown-to-html-and-pdf">this link</a>
+
+####Approach x: Create your own parser / processor
 I've created the below InputFormat.scala file:
 
 <code>
