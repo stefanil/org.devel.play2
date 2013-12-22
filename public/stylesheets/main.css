@@ -59,11 +59,18 @@ li.navitem>a>img {
 	margin-right: 10px;
 }
 
-div#navbar-downer-shadow {
-	margin: 50px 0 0 0;
+div#navbar-downer-shadow, div.navbar-downer-shadow {
 	height: 10px;
 	width: 100%;	
 	background: transparent url("../images/downer-shadow.png") repeat-x top;
+}
+
+div#navbar-downer-shadow {
+	margin: 50px 0 0 0;
+}
+
+div.navbar-downer-shadow {
+	margin: 0;
 }
 
 /* Content */
