@@ -92,3 +92,13 @@ div#footer>div.container>p {
 	margin: 0px;
 	color: white;
 }
+
+/* ############ INDEX ############# */
+
+div.item-container {
+	background: black url("../images/navbar-bg.png") repeat-x top;
+}
+
+
+
+
