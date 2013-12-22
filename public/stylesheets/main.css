@@ -99,6 +99,18 @@ div.item-container {
 	background: black url("../images/navbar-bg.png") repeat-x top;
 }
 
+div.item-key, div.item-value {
+	margin: 10px;
+	padding: 10px;	
+	background: white;
+}
+
+div.item-meta-values {
+	margin: 10px;
+	background: transparent;
+	color: white;
+}
+
 
 
 
