@@ -1,5 +1,3 @@
-@(message: String)
+@(items: List[models.Item])
 
-@main(1, "Projects @ skills.devel.org") {
-	@message
-}
+@main(1, "Projects @ skills.devel.org", "Information about projects ..", items)

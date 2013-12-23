@@ -121,8 +121,18 @@ div.item-container {
 	background: black url("../images/navbar-bg.png") repeat-x top;
 }
 
+div.col-item-key {
+	padding-right: 0px;
+}
+
+div.col-item-value {
+	padding-left: 0px;
+}
+
 div.item-key, div.item-value {
-	margin: 10px;
+	margin: 10px 10px 10px 10px;
+	min-height: 100px;
+/* 	width: 100%; */
 	padding: 10px;	
 	background: white;
 }

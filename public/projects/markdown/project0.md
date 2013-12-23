@@ -1,12 +1,12 @@
-org.devel.skills.play2
-===============
-
+%%% markdown_metadata_plugin 
+creator=stefan
+createdOn=1387770382
+href=http://www.google.de
+img=
+%%%
+####Project 0
 This is an online presentation for presenting my skills.
 
-#Features
-
-##Technical Features
-
-###Built on Play Framework v2.2.1
+#####Built on Play Framework v2.2.1
 * dependency and build management based on SBT
 * built using Scala programming language in frontend and backend
