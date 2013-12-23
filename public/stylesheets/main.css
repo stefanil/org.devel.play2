@@ -1,7 +1,18 @@
 /* Header */
 
 div#header {
-	background: transparent;
+	background: white;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+}
+
+div#header-img-container {
+	background: white;
+}
+
+img#header-img {
+	background: white;
 }
 
 /* Navigation Bar */
@@ -16,6 +27,7 @@ div#navbar {
 
 div#navbar-container {
 	background: black url("../images/navbar-bg.png") repeat-x top;
+	border-bottom: solid grey 1px;
 }
 
 a#navbar-brand {
@@ -60,6 +72,8 @@ li.navitem>a>img {
 }
 
 div#navbar-downer-shadow, div.navbar-downer-shadow {
+	position: fixed;
+	top: 80px;
 	height: 10px;
 	width: 100%;	
 	background: transparent url("../images/downer-shadow.png") repeat-x top;
@@ -75,7 +89,7 @@ div.navbar-downer-shadow {
 
 /* Content */
 
-.div#content {
+div#content.container {
 	margin-top: 130px;
 	padding: 10px;
 	background: url("../images/downer-shadow.png") repeat-x top;
@@ -85,7 +99,7 @@ div.navbar-downer-shadow {
 /* Footer */
 
 div#footer {
-	position: absolute;
+	position: relativ;
 	bottom: 0px;
 	
 	width: 100%;
@@ -103,6 +117,7 @@ div#footer>div.container>p {
 /* ############ INDEX ############# */
 
 div.item-container {
+	margin-bottom: 10px;
 	background: black url("../images/navbar-bg.png") repeat-x top;
 }
 
@@ -114,6 +129,7 @@ div.item-key, div.item-value {
 
 div.item-meta-values {
 	margin: 10px;
+	margin-bottom: 0px;
 	background: transparent;
 	color: white;
 }

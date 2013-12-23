@@ -1,5 +1,6 @@
 # FOLDERS
-bin
+bin/**/*
+#!bin/create_markdown.sh
 logs
 project/project
 project/target
