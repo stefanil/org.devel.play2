@@ -1,7 +1,8 @@
 @(pageId: Integer, title: String, message:String, items: List[models.Item])
-@*(content: Html)*@
 
 @import controllers.Application._
+@import utils.Utils4Devel
+@import java.util.Date
 
 <!DOCTYPE html>
 
@@ -36,7 +37,7 @@
 							<div class="row">
 								<div class="col-sm-12 col-md-12">
 									<div class="item-meta-values">
-										@{item.creator() getOrElse "anonymous"} @@ @{item.createdOn() getOrElse "unknown"}
+										@{item.creator() getOrElse "anonymous"} @@ @{item.createdOn map { Utils4Devel.formatDate(_:Date) } getOrElse "unknown"}
 									</div>
 								</div>
 							</div>
@@ -93,9 +94,9 @@
 	        </div>
 	        <div id="navbar-collapse" class="collapse navbar-collapse">
 	          <ul id="navbar-collapse-menu" class="nav navbar-nav">
-	            <li id="me-navitem" class="@if(pageId == 0){active }navitem"><a href="@routes.Application.me"><img src="@routes.Assets.at("me/images/me16.png")" height="16px"/>Me</a></li>
-	            <li id="projects-navitem" class="@if(pageId == 1){active }navitem"><a href="@routes.Application.projects"><img src="@routes.Assets.at("projects/images/projects16.png")" width="20px"/>Projects</a></li>
-	            <li id="music-navitem" class="@if(pageId == 2){active }navitem"><a href="@routes.Application.music"><img src="@routes.Assets.at("music/images/music16.png")" width="20px"/>Music</a></li>
+	            <li id="me-navitem" class="@if(pageId == 0){active }navitem"><a href="@routes.Application.me"><img src="@routes.Assets.at("me/images/me32.png")" height="25px"/>Me</a></li>
+	            <li id="projects-navitem" class="@if(pageId == 1){active }navitem"><a href="@routes.Application.projects"><img src="@routes.Assets.at("projects/images/projects32.png")" width="32px"/>Projects</a></li>
+	            <li id="music-navitem" class="@if(pageId == 2){active }navitem"><a href="@routes.Application.music"><img src="@routes.Assets.at("music/images/music32.png")" width="32px"/>Music</a></li>
 	          </ul>
 	        </div><!--/.nav-collapse -->
 	      </div>
@@ -104,7 +105,7 @@
         <!-- Bootstrap core JavaScript 
         	 ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
-        <script src="@routes.Assets.at("javascripts/jquery-1.9.0.min.js")"  type="text/javascript"></script>
-        <script src="@routes.Assets.at("javascripts/bootstrap.min.js")" type="text/javascript"></script>
+        <script src="@routes.Assets.at("main/javascripts/jquery-1.9.0.min.js")"  type="text/javascript"></script>
+        <script src="@routes.Assets.at("main/javascripts/bootstrap.min.js")" type="text/javascript"></script>
     </body>
 </html>

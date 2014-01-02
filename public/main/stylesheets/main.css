@@ -41,12 +41,18 @@ a#navbar-brand {
 	color: white;
 }
 
+div#navbar-collapse {
+	border: 0;
+}
+
 ul#navbar-collapse-menu.nav.navbar-nav {
-	margin-top: 10px;
+	margin-top: 3px;
+	padding-top: 8px;
 }
 
 li.active.navitem {
 	background-color: rgb(75, 75, 75);
+	margin-top: 2px;
 }
 
 ul.navbar-nav>li.active.navitem>a, ul.navbar-nav>li.active.navitem>a:HOVER {
@@ -55,16 +61,28 @@ ul.navbar-nav>li.active.navitem>a, ul.navbar-nav>li.active.navitem>a:HOVER {
 	color: black;
 }
 
+li#me-navitem>a:HOVER {
+	/* TODO: show tooltipps */
+}
+
+li#me-navitem>a:HOVER {
+	/* TODO: show tooltipps */
+}
+
+li#me-navitem>a:HOVER {
+	/* TODO: show tooltipps */
+}
+
 li.navitem {
-	margin: 0px 5px;
+	margin: 0px 5px 0px 5px;
 	border: none;
 }
 
 li.navitem>a {
 	border: 1px solid black;
 	background: black url("../images/navitem-bg.png") repeat-x top;
-	padding: 9px 15px 9px 15px;
-	font-weight: bold;
+	padding: 8px 15px 4px 15px;
+	font-weight: normal;
 }
 
 li.navitem>a>img {
@@ -99,7 +117,7 @@ div#content.container {
 /* Footer */
 
 div#footer {
-	position: relativ;
+	position: fixed;absolute;
 	bottom: 0px;
 	
 	width: 100%;
@@ -114,7 +132,7 @@ div#footer>div.container>p {
 	color: white;
 }
 
-/* ############ INDEX ############# */
+/* Index */
 
 div.item-container {
 	margin-bottom: 10px;
@@ -132,7 +150,6 @@ div.col-item-value {
 div.item-key, div.item-value {
 	margin: 10px 10px 10px 10px;
 	min-height: 100px;
-/* 	width: 100%; */
 	padding: 10px;	
 	background: white;
 }
@@ -143,7 +160,3 @@ div.item-meta-values {
 	background: transparent;
 	color: white;
 }
-
-
-
-

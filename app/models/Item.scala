@@ -3,61 +3,49 @@
  */
 package models
 
-import java.net.MalformedURLException
 import java.net.URL
-import play.api.Logger
-import play.api.templates.Html
-import java.text.SimpleDateFormat
 import java.util.Date
-import java.lang.Long
+import java._
+import play.api.templates.Html
+import utils.Utils4Devel
+import java.util.Calendar
 
 /**
  * @author stefan.illgen
  */
 class Item {
-
-  private var _creator: Option[String] = null
+  
+  // defaults
+  val HREF:URL = new URL("http://anonymous.org")
+  val IMG:URL = new URL("http://anonymous.org")
+  val CREATED_ON:Date = Utils4Devel.createDate(1982, 2, 20, 23, 30, 35)
+  val CREATOR = "Anonymous"
+  val CONTENT = Html("There was no markdown scripted yet.")
+  
+  // bean stuff
+  private var _creator: Option[String] = Utils4Devel.toOption(CREATOR)
   def creator(): Option[String] = _creator
-  def getCreator(): String = _creator orNull
-  def setCreator(creator: String) = _creator = Option(creator)
-
-  private var _createdOn: Option[String] = null
-  def createdOn(): Option[String] = _createdOn
-  def getCreatedOn(): String = _createdOn orNull
-  def setCreatedOn(createdOn: String) = _createdOn = 
-    Option(new SimpleDateFormat("KK:mm:ss a '|' yyyy-MM-dd").
-      format(new Date(Long.valueOf(createdOn))))
-
-  private var _href: Option[URL] = null
+  def getCreator(): String = _creator getOrElse CREATOR
+  def setCreator(creator: String) = _creator = Utils4Devel.toOption(creator)
+  
+  private var _createdOn: Option[Date] = Utils4Devel.toOption(CREATED_ON)
+  def createdOn(): Option[Date] = _createdOn
+  def getCreatedOn(): Date = _createdOn getOrElse CREATED_ON
+  def setCreatedOn(createdOn: Date) = _createdOn = Utils4Devel.toOption(createdOn)
+  
+  private var _href: Option[URL] = Utils4Devel.toOption(HREF)
   def href(): Option[URL] = _href
-  def getHref(): URL = _href orNull
-  def setHref(href: URL) = _href = Option(href)
+  def getHref(): URL = _href getOrElse HREF
+  def setHref(href: URL) = _href = Utils4Devel.toOption(href)
 
-  private var _img: Option[URL] = null
+  private var _img: Option[URL] = Utils4Devel.toOption(IMG)
   def img(): Option[URL] = _img
-  def getImg(): URL = _img orNull
-  def setImg(img: URL) = _img = Option(img)
+  def getImg(): URL = _img  getOrElse IMG
+  def setImg(img: URL) = _img = Utils4Devel.toOption(img)
 
-  private var _content: Option[Html] = null
+  private var _content: Option[Html] = Utils4Devel.toOption(CONTENT)
   def content(): Option[Html] = _content
-  def getContent(): Html = _content orNull
-  def setContent(content: Html) = _content = Option(content)
-
-  def createOptionURL(spec: String): URL =
-    Option(spec) map { _.trim } filter { _.length != 0 } map { createURL(_) } orNull
-  // or use also ..
-  // Option(spec).map(_.trim).filter(_.length != 0).map(createURL(_)).get
-
-  def createURL(url: String): URL = {
-    try { return new URL(url) }
-    catch {
-      case e: MalformedURLException => {
-        // log it
-        Logger.error("Error when creating the URL [" + url + "]:", e)
-        // and return null
-        return null
-      }
-    }
-  }
-
+  def getContent(): Html = _content getOrElse CONTENT
+  def setContent(content: Html) = _content = Utils4Devel.toOption(content)
+  
 }

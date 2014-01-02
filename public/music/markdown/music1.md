@@ -1,8 +1,8 @@
 %%% markdown_metadata_plugin 
 creator=stefan
 createdOn=1387770382
-href=http://www.google.de
-img=
+href=@routes.Assets.at("music/images/music16.png")
+img=@routes.Assets.at("music/images/music16.png")
 %%%
 ####Music 1
 This is an online presentation for presenting my skills.

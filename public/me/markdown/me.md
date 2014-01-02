@@ -1,8 +1,8 @@
 %%% markdown_metadata_plugin 
 creator=stefan
 createdOn=1387770382
-href=
-img=
+href=@routes.Assets.at("me/images/me16.png")
+img=@routes.Assets.at("me/images/me16.png")
 %%%
 #Me
 This is an online presentation for presenting my skills.

@@ -1149,7 +1149,7 @@
        xlink:href="#linearGradient4135-4-6-5-6-6"
        id="linearGradient4422"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.7748182,0,0,0.7748182,547.76818,-181.24402)"
+       gradientTransform="matrix(1.6666652,0,0,1.6666652,516.66668,-484.07426)"
        x1="28"
        y1="364.36218"
        x2="28"
@@ -1556,15 +1556,15 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.5"
-     inkscape:cx="470.78055"
-     inkscape:cy="491.4149"
+     inkscape:zoom="1"
+     inkscape:cx="577.26902"
+     inkscape:cy="817.39095"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
-     inkscape:window-width="1362"
-     inkscape:window-height="698"
-     inkscape:window-x="1680"
+     inkscape:window-width="1676"
+     inkscape:window-height="1025"
+     inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
      showguides="false"
@@ -1795,11 +1795,11 @@
     <path
        inkscape:export-ydpi="93.91304"
        inkscape:export-xdpi="93.91304"
-       inkscape:export-filename="/home/stefan/DEVEL/projects/play2/github/org.devel.skills.play2/layout/me16.png"
+       inkscape:export-filename="/home/stefan/DEVEL/projects/play2/github/org.devel.skills.play2/layout/me32.png"
        inkscape:connector-curvature="0"
        id="path3776-3-60-9-3-5"
-       d="m 565.29845,101.07044 c 2.61501,0 2.61501,-1.355933 2.61501,-2.711871 -1.30751,0 -2.61501,-1.355925 -2.61501,-2.711857 l 0,-2.711872 c 0,-1.35594 1.3075,-2.711865 2.61501,-2.711865 l 2.61501,0 c 1.3075,0 2.61501,1.355925 2.61501,2.711865 l 0,2.711872 c 0,1.355932 -1.30751,2.711857 -2.61501,2.711857 0,1.355938 0,2.711871 2.61501,2.711871 z"
-       style="fill:url(#linearGradient4422);fill-opacity:1;stroke:#000000;stroke-width:0.77481818;stroke-opacity:1"
+       d="m 554.375,123.19553 c 5.625,0 5.625,-2.91667 5.625,-5.83335 -2.81251,0 -5.625,-2.91665 -5.625,-5.83331 l 0,-5.83335 c 0,-2.91668 2.81249,-5.83333 5.625,-5.83333 l 5.62499,0 c 2.81248,0 5.62499,2.91665 5.62499,5.83333 l 0,5.83335 c 0,2.91666 -2.81251,5.83331 -5.62499,5.83331 0,2.91668 0,5.83335 5.62499,5.83335 z"
+       style="fill:url(#linearGradient4422);fill-opacity:1;stroke:#000000;stroke-width:1.6666652;stroke-opacity:1"
        sodipodi:nodetypes="ccccccccccc" />
     <g
        transform="matrix(0.71407118,0,0,0.72311005,437.57961,236.85647)"
@@ -1861,8 +1861,8 @@
     <g
        inkscape:export-ydpi="93.333969"
        inkscape:export-xdpi="93.333969"
-       inkscape:export-filename="/home/stefan/DEVEL/projects/play2/github/org.devel.skills.play2/layout/music16.png"
-       transform="matrix(0.71407118,0,0,0.72311005,538.90635,-121.43974)"
+       inkscape:export-filename="/home/stefan/DEVEL/projects/play2/github/org.devel.skills.play2/layout/music32.png"
+       transform="matrix(1.5233519,0,0,1.5426347,393.64303,-422.90928)"
        id="g4908-2">
       <rect
          style="fill:url(#linearGradient4914-4);fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
@@ -1912,9 +1912,9 @@
     <g
        inkscape:export-ydpi="90.000175"
        inkscape:export-xdpi="90.000175"
-       inkscape:export-filename="/home/stefan/DEVEL/projects/play2/github/org.devel.skills.play2/layout/projects16.png"
+       inkscape:export-filename="/home/stefan/DEVEL/projects/play2/github/org.devel.skills.play2/layout/projects32.png"
        id="g4320-1"
-       transform="translate(423.81295,-244.30528)">
+       transform="matrix(1.9999998,0,0,1.9999998,339.43797,-608.4531)">
       <path
          sodipodi:nodetypes="ccccccccccc"
          style="fill:url(#linearGradient4318-3);fill-opacity:1;stroke:#000000;stroke-width:0.72316384;stroke-opacity:1"

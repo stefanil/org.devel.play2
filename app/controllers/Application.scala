@@ -11,6 +11,7 @@ import java.io.FileReader
 import models.Item
 import java.util.ArrayList
 import scala.collection.mutable.MutableList
+import parsers.Markdown2ItemProcessor
 
 /**
  * @author stefan.illgen
