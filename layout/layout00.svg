@@ -22,19 +22,30 @@
   <defs
      id="defs4">
     <linearGradient
+       id="linearGradient4285">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop4287" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop4289" />
+    </linearGradient>
+    <linearGradient
        id="linearGradient4218">
       <stop
          id="stop4220"
          offset="0"
          style="stop-color:#000000;stop-opacity:1;" />
       <stop
-         style="stop-color:#7f7f7f;stop-opacity:0.49803922;"
-         offset="0.19444445"
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="0.7175926"
          id="stop4224" />
       <stop
          id="stop4222"
          offset="1"
-         style="stop-color:#ffffff;stop-opacity:0;" />
+         style="stop-color:#000000;stop-opacity:0;" />
     </linearGradient>
     <linearGradient
        id="linearGradient4176">
@@ -1170,10 +1181,10 @@
        id="linearGradient4414"
        gradientUnits="userSpaceOnUse"
        gradientTransform="matrix(0.02222222,0,0,1,439.11111,67.362176)"
-       x1="20"
-       y1="120"
-       x2="20"
-       y2="90" />
+       x1="-4.9999504"
+       y1="100.00001"
+       x2="-4.9999504"
+       y2="90.000008" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4135-4-6-5-6-6"
@@ -1644,6 +1655,48 @@
        id="linearGradient4199"
        xlink:href="#linearGradient4218"
        inkscape:collect="always" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3894-8-6-1"
+       id="linearGradient4434-3"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(595,391.86218)"
+       x1="20"
+       y1="120"
+       x2="20"
+       y2="90" />
+    <linearGradient
+       id="linearGradient3894-8-6-1">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop3896-4-8-0" />
+      <stop
+         style="stop-color:#4b4b4b;stop-opacity:1;"
+         offset="1"
+         id="stop3898-8-8-4" />
+    </linearGradient>
+    <linearGradient
+       y2="90"
+       x2="20"
+       y1="120"
+       x1="20"
+       gradientTransform="translate(1075,361.86218)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient4241"
+       xlink:href="#linearGradient3894-8-6-1"
+       inkscape:collect="always" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4285"
+       id="radialGradient4291"
+       cx="843.68341"
+       cy="482.94501"
+       fx="843.68341"
+       fy="482.94501"
+       r="24"
+       gradientTransform="matrix(2.0833312,1.4659942e-6,-1.7242545e-6,2.4586864,-522.67117,-605.04941)"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -1652,9 +1705,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="16"
-     inkscape:cx="16.524184"
-     inkscape:cy="917.23452"
+     inkscape:zoom="8"
+     inkscape:cx="1229.6651"
+     inkscape:cy="502.13631"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -1936,11 +1989,11 @@
     <rect
        inkscape:export-ydpi="90"
        inkscape:export-xdpi="90"
-       inkscape:export-filename="/home/stefan/DEVEL/projects/play2/github/org.devel.skills.play2/public/images/navitem-bg.png"
+       inkscape:export-filename="/home/stefan/DEVEL/projects/play2/github/org.devel.skills.play2/public/main/images/navbar-bg.png"
        style="fill:url(#linearGradient4414);fill-opacity:1;stroke:none"
        id="rect3892-65"
-       width="2"
-       height="30.000002"
+       width="1"
+       height="29.999998"
        x="438"
        y="157.36218" />
     <rect
@@ -2421,5 +2474,35 @@
        x="-123.36218"
        y="-6.000001"
        transform="matrix(0,-1,1,0,0,0)" />
+    <rect
+       style="fill:url(#linearGradient4241);fill-opacity:1;stroke:#000000;stroke-opacity:1"
+       id="rect3892-0-5"
+       width="75"
+       height="29.999998"
+       x="1040"
+       y="451.86218" />
+    <image
+       y="292.36218"
+       x="1092"
+       id="image4268"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAIAAAD9b0jDAAAAA3NCSVQICAjb4U/gAAABfklEQVRI
+iWP8+fMnA7UBE9VNZGBgYCFCzecr66cv3nbu6u1H7xiE5FS1jbxiMwN1eHFrYCTg/bcnJlRUrLr6
+C02YTTuso6PAQpgMQ39emRCZtuoFDlm5sFkLC3TYscjgC9OHq1pwmsjAwPBoVcuGh1hl8Bj68ND6
+R3isZGBgeLT+EFZTcRv68/m5d/jNZGB4ceU5tsDDbeivX7/QowdTzResamiSToeDoWw8PGyEdONQ
+g9tQdnk7VUKGqtrJk5j4hS3CDPEayWYYhj2j4gtTYdeyUnMeXLI85vllrtgzP/6Ikg9sqsHhWsOa
+pkB5HNron6Tenlhc13Ueu9z5rrrFJ95il8NV9H2+sr67rnsPnkKKgYGBgUHOpbSmFKPAxmLoz4e7
+J7a0bsAomHEBNu2A6pp8V6TEhWbo2xOLW1qmnyRYPGEAIfPMmppYaApDGEqkh/EBCZfSptJAHV6Y
+oZ9PZLsX4YgTkoBh386p8NgnNgQJgl80SqeEqmiyAE1cCgBMaIt2YTVaYQAAAABJRU5ErkJggg==
+"
+       height="28"
+       width="28" />
+    <path
+       style="fill:url(#radialGradient4291);fill-opacity:1;stroke:#484848;stroke-opacity:1"
+       d="m 1224,596.36222 c 0,-2 0,-4 0,-6 5.3334,-3.33334 10.6666,-6.66666 16,-10 0,-1.33334 0,-2.66666 0,-4 -1.3334,-1.33334 -2.6666,-2.66666 -4,-4 0,-5.33334 0,-10.66666 0,-16 0.6344,-0.72716 1.5318,-1.3454 2,-2.14142 0.088,-0.8657 -0.3364,-1.94406 0.6,-2.45858 0.8212,-0.92968 1.74,-1.72404 2.9178,-2.15894 1.2248,-0.52774 2.3426,-1.50802 3.755,-1.24106 2.2794,0.0426 4.5992,-0.085 6.8536,0.0632 1.3684,0.77744 2.9366,1.27722 4.1736,2.23676 0.5166,0.6817 1.5106,1.16562 1.7,1.98284 0.064,0.82838 -0.2968,1.83338 0.6,2.31716 0.569,0.7071 1.6796,1.18988 1.4,2.24852 0,5.0505 0,10.10098 0,15.15148 -1.3334,1.33334 -2.6666,2.66666 -4,4 0,1.33334 0,2.66666 0,4 1.4102,0.79884 3.0212,1.31892 4.3,2.3 1.3342,1.25256 2.5308,2.6959 3.953,3.8265 1.357,0.79296 2.963,1.24058 4.147,2.2735 1.2,1.2 2.4,2.4 3.6,3.6 0,1.33334 0,2.66666 0,4 -16,0 -32,0 -48,0 z"
+       id="path4271"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/stefan/DEVEL/projects/play2/github/org.devel.skills.play2/public/main/images/logo.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
   </g>
 </svg>
