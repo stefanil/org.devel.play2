@@ -1,3 +1,9 @@
-@(items: List[models.Item])
+@(items: List[models.Item])(implicit request:play.api.mvc.Request[_])
 
-@main(1, "Projects @ skills.devel.org", "Information about projects ..", items)
+@import play.api.i18n._
+
+@defining(Application.lang(request)) { lang =>
+
+	@main(1, Messages("projects.title")(lang), Messages("projects.description")(lang), items)
+
+}

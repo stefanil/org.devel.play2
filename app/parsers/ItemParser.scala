@@ -81,7 +81,8 @@ class ItemParser extends RegexParsers {
     parseAll(
       >^^(ItemConstants.CREATOR_KEY_REGEX) ~! separator ~!
         ^^>(ItemConstants.ARBITRARY_CHAR_VALUE_REGEX),
-      new StringReader(line)) match {
+      new StringReader(line)
+      ) match {
         case Success(result: ItemParser.this.~[ItemParser.this.~[String, String], String], next: Input) => {
           this.result.setCreator(result._2);
           return true
@@ -149,6 +150,7 @@ class ItemParser extends RegexParsers {
    * 
    */
   def href(line: String): Boolean = {
+    println("Stefan: ".concat(line))
     parseAll(>^^(ItemConstants.HREF_KEY_REGEX) ~! separator ~! hrefValue, new StringReader(line)) match {
       case Success(result:ItemParser.this.~[ItemParser.this.~[String,String],URL], next: Input) => {
         this.result.setHref(result._2);
@@ -162,6 +164,7 @@ class ItemParser extends RegexParsers {
    * 
    */
   def hrefValue: Parser[URL] = ItemConstants.HREF_VALUE_REGEX.r ^^ {
+    println("Stefan: ".concat(_:String))
     Utils4Devel.toOption(new URL(_:String)) get
   }
 
@@ -169,12 +172,14 @@ class ItemParser extends RegexParsers {
    * 
    */
   def img(line: String): Boolean = {
+    println("Stefan (img): ".concat(line));
     parseAll(>^^(ItemConstants.IMG_KEY_REGEX) ~! separator ~! imgValue, new StringReader(line)) match {
       case Success(result:ItemParser.this.~[ItemParser.this.~[String,String],URL], next: Input) => {
+        println("Stefan (Success): ".concat(result._2.toString()));
         this.result.setImg(result._2);
         return true
       }
-      case _: NoSuccess => return false
+      case _: NoSuccess => { println("Stefan (Img Error): "); return false }
     }
   }
   
@@ -182,6 +187,7 @@ class ItemParser extends RegexParsers {
    * 
    */
   def imgValue: Parser[URL] = ItemConstants.IMG_VALUE_REGEX.r ^^ {
+    println("Stefan (imgValue): ".concat(_:String));
     Utils4Devel.toOption(new URL(_:String)) get
   }
 
@@ -211,6 +217,12 @@ class ItemParser extends RegexParsers {
    * One line is covered by one parser for now.
    * So the first one, which succeeds will win.
    */
-  def parseLine(line: String) { for (f <- fn) { f(line); return } }
+  def parseLine(line: String) { 
+    for (f <- fn) { 
+    	println("Stefan: ".concat(line));
+    	if(f(line)) 
+    	  return 
+    } 
+  }
 
 }

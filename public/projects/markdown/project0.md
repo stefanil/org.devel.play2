@@ -1,8 +1,8 @@
 %%% markdown_metadata_plugin 
 creator=stefan
 createdOn=02:44:25 AM | 2013-12-25
-href=@routes.Assets.at("music/images/music16.png")
-img=@routes.Assets.at("music/images/music16.png")
+href=music/images/music16.png
+img=http://localhost:9000/assets/projects/music/images/music16.png
 %%%
 ####FXMaps
 #####Features

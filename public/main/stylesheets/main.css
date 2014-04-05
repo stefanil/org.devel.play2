@@ -6,6 +6,39 @@ body {
 	width: 285px;
 }
 
+/* Headings */
+h1,h2,h3,h4,h5,h6,h7 {
+	color: #332300;
+	font-family: 'Droid Serif', serif;
+}
+
+h1 {
+	font-size: 1.5em;
+	margin-top: 10px;
+}
+
+h1>p {
+	line-height: 12pt;
+}
+
+div.h1-glyphicon {
+	padding-right: 0;
+}
+
+h1>span.glyphicon {
+	font-size: 1.5em;
+	/* 	margin-right: 15px; */
+	padding-right: 35px;
+}
+
+h2 {
+	font-size: 1.2em;
+}
+
+h3 {
+	font-size: 1.0em;
+}
+
 /* Navigation Bar */
 div#navbar {
 	position: fixed;
@@ -267,11 +300,19 @@ div#message {
 	padding-left: 15px;
 	padding-right: 15px;
 	padding-top: 10px;
+	padding-bottom: 10px;
 	background-color: #332300;
 	background-image: url("../images/right-vertical-shadow.png"),
 		url("../images/left-vertical-shadow.png");
 	background-position: left top, right top;
 	background-repeat: repeat-y;
+}
+
+div#message>div {
+	background-color: white;
+	border-radius: 5px;
+	border: solid darkgrey 2px;
+	padding: 10px;
 }
 
 /* Footer */

@@ -33,7 +33,7 @@ object ItemConstants {
   val CREATED_ON_VALUE_EMPTY_REGEX: String = """\w{0}\d{0}"""
 
   val HREF_KEY_REGEX: String = """href"""
-  val HREF_VALUE_REGEX: String = """http://\w*\d*"""
+  val HREF_VALUE_REGEX: String = """http://\w*\d*""" // """http://\w*\d*"""   \s*\w+\s*
   val IMG_KEY_REGEX: String = """img"""
   val IMG_VALUE_REGEX: String = """http://\w*\d*"""
     

@@ -29,7 +29,7 @@ object Markdown2ItemProcessor extends Markdown4jProcessor {
     if (mdDir.exists() && mdDir.canRead() && mdDir.isDirectory()) {
       for (file <- mdDir.listFiles()) {
         val content = Html(process(file))
-        val item = plugin.getResult()
+        val item:Item = plugin.getResult()
         item.setContent(content)
         result += (item)
       }
