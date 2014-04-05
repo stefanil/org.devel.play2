@@ -29,7 +29,9 @@ div#navbar-container {
 
 a#navbar-brand {
 	margin-right: 20px;
+	padding: 5px inherit 0px inherit;
 	
+	vertical-align: middle;
 	font-family: 'Courier New', monospace;
 	font-size: 18px;
 	font-style: normal;
@@ -37,6 +39,14 @@ a#navbar-brand {
 	font-weight: bold;
 	line-height: 19px;
 	color: white;
+}
+
+a#navbar-brand>span.glyphicon.glyphicon-user {
+/* 	padding: 2px 3px 2px 3px; */
+	vertical-align: middle;	
+	font-size: 33pt;
+	font-weight: bold;
+	margin: 0px 20px 0px 50px;
 }
 
 div#navbar-collapse {
@@ -52,46 +62,139 @@ div#navbar-collapse.navbar-collapse.in {
 ul#navbar-collapse-menu.nav.navbar-nav {
 	clear: both;
 	position: relative;
-	margin-top: 3px;
+	margin-top: 2px;
 	margin-left: auto;
 	margin-right: auto;
 	width: 100%;
-	padding-top: 8px;
+	padding-top: 0px;
 }
 
 li.active.navitem {
 	margin-top: 2px;
-	background-color: rgb(75, 75, 75);
-}
-
-ul.navbar-nav>li.active.navitem>a, ul.navbar-nav>li.active.navitem>a:HOVER {
-	border: 1px solid white;
-	background: white;
-	color: black;
-}
-
-li#me-navitem>a:HOVER {
-	/* TODO: show tooltipps */
+	background-color: transparent; /* rgb(75, 75, 75); */
 }
 
 li.navitem {
-	margin: 0px 5px 0px 5px;
+	margin: 2px 5px 0px 5px;
 	border: none;
 }
 
-li.navitem>a {
-	border: 1px solid black;
-	padding: 8px 15px 4px 15px;
-	background: black url("../images/navitem-bg.png") repeat-x top;
-	font-weight: normal;
+/* ### anchor ### */
+
+li.active.navitem>a.navanchor, 
+li.active.navitem>a.navanchor:HOVER {
+	margin-top: 3px;
+	background-color: transparent;
+/* 	color : white; */
+	font-style: oblique;
 }
 
-li.navitem>a>img {
-	margin-right: 10px;
+li.active.navitem>a.navanchor:HOVER {
+/* 	color: #e1e1e1; */
 }
 
+li.navitem>a.navanchor {
+	background-color: transparent;
+	margin-top: 3px;
+	height: 42px;
+	padding: 0px 0px;
+/* 	color: white; */
+	font: normal sans-serif 16px;
+	text-align: left;
+}
 
+/* li.navitem>a.navanchor { */
+/* /* 	border: 1px solid black; */ */
+/* 	padding: 8px 15px 4px 15px; */
+	
+/* 	background-color: #4b4b4b; */
+/* 	border-color: lightgrey; */
+/* 	font-weight: normal; */
+/* } */
 
+li.navitem>a.navanchor {
+	background-color: transparent;
+} class="navanchor"
+
+li.navitem>a.navanchor:HOVER {
+/* 	background: url("../images/navitem-bg.png") repeat-x top; */
+}
+
+li.active.navitem>a.navanchor:HOVER {
+	background-color: transparent;
+}
+
+/* ######## thumbnails in navigation ############ */
+
+.img-thumbnail {
+	background-color: transparent;
+}
+
+li.active.navitem>a>span.img-thumbnail {
+	background-color: white;
+}
+
+li.navitem>a>span.img-thumbnail, 
+li.active.navitem>a>span.img-thumbnail {
+	width: 35px;
+	max-width: none;
+	height: 35px;
+	padding: 3px;
+}
+
+/* li.active.navitem>a.navanchor>div>div>*/
+li.active.navitem>a:HOVER>span.img-thumbnail {
+	background-color: #4b4b4b;
+	/* 	background: url("../images/active-navitem-bg.png") top repeat-x;	 */
+	border-color: lightgrey;
+}
+
+/* li.navitem>a.navanchor:HOVER>div>div> */
+li.navitem>a:HOVER>span.img-thumbnail {
+	background-color: white;
+	border-color: lightgrey;
+}
+
+li.active.navitem>a:HOVER>span.img-thumbnail {
+	background-color: #4b4b4b;
+	border-color: lightgrey;
+}
+
+/* ### glyphicon span ### */
+
+li.navitem>a.navanchor>span>span.glyphicon,
+li.active.navitem>a.navanchor>span>span.glyphicon {
+	padding: 2px 3px 2px 3px;
+	vertical-align: top;	
+	font-size: 16pt;
+	font-weight: bold;
+}
+
+li.navitem>a.navanchor>span>span.glyphicon,
+li.navitem>a.navanchor:VISITED>span>span.glyphicon {
+	color: white;
+}
+
+li.navitem>a.navanchor:HOVER>span>span.glyphicon {
+	color: #4b4b4b;
+}
+
+li.active.navitem>a.navanchor:VISITED>span>span.glyphicon {
+	color: #4b4b4b;
+}
+
+li.active.navitem>a.navanchor:HOVER>span>span.glyphicon {
+	color: white;
+}
+
+/* ### nav text span ### */
+
+/* li.navitem>a.navanchor>span.nav-text { */
+/* 	padding: 6px 0px; */
+/* 	vertical-align: middle; */
+/* } */
+
+/* item-container-downer-shadow */
 
 div.item-container-downer-shadow {
 	height:10px;
