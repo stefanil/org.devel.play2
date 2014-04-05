@@ -28,81 +28,123 @@
 	    
     </head>   
     <body>
-        <!-- content -->       
-		<div id="content" class="container">
-			<div>
-           		<pre>@message</pre>	
-				@for(item<-items) {
-					<div class="item-container">
-						@if(item.creator || item.createdOn) {
+    
+    	
+    
+    	<!-- banner -->
+    	<!--
+		<div class="banner content container">
+    		<div class="row"> 
+    			<div id="banner" class="col-sm-12 col-md-12"> </div>
+    		</div>  
+    	</div>
+    	-->
+        
+        <div id="downer-shadow">
+        
+	        <!-- content -->       
+			<div class="content container">
+				<!-- banner -->
+				<div class="row"> 
+	    			<div id="banner" class="col-sm-12 col-md-12"> </div>
+	    		</div>
+				<!-- message -->
+					<div class="row">
+						<div id="message" class="col-sm-12 col-md-12">
+							<pre>@message</pre>
+						</div>			
+	           		</div>	
+					@for(item<-items) {
+						<div class="item-container">
+							@if(item.creator || item.createdOn) {
+								<div class="row">
+									<div class="col-sm-12 col-md-12">
+										<div class="item-meta-values">
+											@{item.creator() getOrElse "anonymous"} @@ @{item.createdOn map { Utils4Devel.formatDate(_:Date) } getOrElse "unknown"}
+										</div>
+									</div>
+								</div>
+							}
 							<div class="row">
-								<div class="col-sm-12 col-md-12">
-									<div class="item-meta-values">
-										@{item.creator() getOrElse "anonymous"} @@ @{item.createdOn map { Utils4Devel.formatDate(_:Date) } getOrElse "unknown"}
+								@if(item.getHref != null || item.getImg != null) {
+									<div class=" col-sm-4 col-md-4 col-item-key" >
+										<div class="thumbnail item-key">
+											<a href="@item.href().map[String](_.toString)" >
+												<img src="@item.img().map[String](_.toString)" />							 
+											</a> 														
+										</div>
+									</div>								
+									<div class="col-sm-8 col-md-8 col-item-value">
+										<div class="thumbnail item-value">
+											@item.content()
+										</div>
 									</div>
-								</div>
+								} else {
+									<div class="col-sm-12 col-md-12">
+										<div class="thumbnail item-value">
+											@item.content()
+										</div>
+									</div>
+								}	
 							</div>
-						}
-						<div class="row">
-							@if(item.getHref != null || item.getImg != null) {
-								<div class=" col-sm-4 col-md-4 col-item-key" >
-									<div class="thumbnail item-key">
-										<a href="@item.href().map[String](_.toString)" >
-											<img src="@item.img().map[String](_.toString)" />							 
-										</a> 														
-									</div>
-								</div>								
-								<div class="col-sm-8 col-md-8 col-item-value">
-									<div class="thumbnail item-value">
-										@item.content()
-									</div>
-								</div>
-							} else {
-								<div class="col-sm-12 col-md-12">
-									<div class="thumbnail item-value">
-										@item.content()
-									</div>
-								</div>
-							}	
 						</div>
-					</div>
-					<div class="navbar-downer-shadow"></div>		
-				}
-           	</div>
-        </div>             
+						<!--
+						<div class="item-container-downer-shadow"></div>
+						-->		
+					}
+	           	</div>
+	        </div>
+        </div>
+        
+        <!-- navbar --> 
+        <!--
+        <div class="pull-right">
+        -->     
+	    <div id="navbar" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	      
+	      <div id="navbar-container" class="container">
+	      
+	      	<div class="row">
+			  	
+			  	<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+	      
+			        <div class="navbar-header">
+			          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			            <span class="sr-only">Toggle navigation</span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			          </button>
+			          <a id="navbar-brand" class="navbar-brand" href="#">skills.devel.org</a>
+			        </div>
+			     </div>
+			     
+			     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" style="float: right;"> 
+			        <div id="navbar-collapse" class="collapse navbar-collapse">
+			          
+				          <ul id="navbar-collapse-menu" class="nav navbar-nav">
+				            <li id="me-navitem" class="@if(pageId == 0){active }navitem"><a href="@routes.Application.me"><img src="@routes.Assets.at("me/images/me32.png")" height="25px"/>Me</a></li>
+				            <li id="projects-navitem" class="@if(pageId == 1){active }navitem"><a href="@routes.Application.projects"><img src="@routes.Assets.at("projects/images/projects32.png")" width="32px"/>Projects</a></li>
+				            <li id="music-navitem" class="@if(pageId == 2){active }navitem"><a href="@routes.Application.music"><span class="glyphicon glyphicon-headphones"></span><!--<img src="@routes.Assets.at("music/images/music32.png")" width="32px"/>-->Music</a></li>
+				          </ul>
+				          
+				     </div><!--/.nav-collapse -->
+	        	</div>
+	        	
+	      </div>
+	      
+	    </div>
+	    <!--
+	    </div>
+        -->
+                    
         <!-- footer -->       
         <div id="footer">
         	<div class="container">
         		<p>© 2014 Stefan Illgen @@ Dresden | Germany</p>
         	</div>
-        </div>        
-        <!-- header + navigation -->   
-        <div id="header">
-          <div id="header-img-container" class="container">
-	      	<img id="header-img" src="@routes.Assets.at("main/images/header.png")" />
-	      </div>
-	    </div>
-	    <div id="navbar" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-	      <div id="navbar-container" class="container">
-	        <div class="navbar-header">
-	          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-	            <span class="sr-only">Toggle navigation</span>
-	            <span class="icon-bar"></span>
-	            <span class="icon-bar"></span>
-	            <span class="icon-bar"></span>
-	          </button>
-	          <a id="navbar-brand" class="navbar-brand" href="#">skills.devel.org</a>
-	        </div>
-	        <div id="navbar-collapse" class="collapse navbar-collapse">
-	          <ul id="navbar-collapse-menu" class="nav navbar-nav">
-	            <li id="me-navitem" class="@if(pageId == 0){active }navitem"><a href="@routes.Application.me"><img src="@routes.Assets.at("me/images/me32.png")" height="25px"/>Me</a></li>
-	            <li id="projects-navitem" class="@if(pageId == 1){active }navitem"><a href="@routes.Application.projects"><img src="@routes.Assets.at("projects/images/projects32.png")" width="32px"/>Projects</a></li>
-	            <li id="music-navitem" class="@if(pageId == 2){active }navitem"><a href="@routes.Application.music"><span class="glyphicon glyphicon-headphones"></span><!--<img src="@routes.Assets.at("music/images/music32.png")" width="32px"/>-->Music</a></li>
-	          </ul>
-	        </div><!--/.nav-collapse -->
-	      </div>
-	    </div>    
-	    <div id="navbar-downer-shadow"></div>       
+        </div> 
+               
         <!-- Bootstrap core JavaScript 
         	 ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->

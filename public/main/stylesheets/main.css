@@ -1,33 +1,30 @@
-/* Header */
-
-div#header {
-	background: white;
-	position: fixed;
-	top: 0px;
-	width: 100%;
-}
-
-div#header-img-container {
-	background: white;
-}
-
-img#header-img {
-	background: white;
+body {
+	background: black;
+	/* set min width */
+	min-width: 285px;
+	width: auto !important;
+    width:285px;
 }
 
 /* Navigation Bar */
 
 div#navbar {
-	top: 80px;
-	height: 40px;
+	position: fixed;
+	top: 0px;
+	height: 50px;
 	min-height: 50px;
 	margin-bottom: 0px;
 	background: black url("../images/navbar-bg.png") repeat-x top;
+	border-bottom: solid grey 1px;
 }
 
 div#navbar-container {
-	background: black url("../images/navbar-bg.png") repeat-x top;
+/* 	position: fixed; */
+/* 	display: inline-table; */
 	border-bottom: solid grey 1px;
+	padding-left: 0px;
+	padding-right: 0;
+	background: black url("../images/navbar-bg.png") repeat-x top;
 }
 
 a#navbar-brand {
@@ -38,35 +35,39 @@ a#navbar-brand {
 	font-style: normal;
 	font-variant: normal;
 	font-weight: bold;
+	line-height: 19px;
 	color: white;
 }
 
 div#navbar-collapse {
+	margin-left: auto;
 	border: 0;
 }
 
+div#navbar-collapse.navbar-collapse.in {
+	padding-left: 0px;
+	padding-right: 0;
+}
+
 ul#navbar-collapse-menu.nav.navbar-nav {
+	clear: both;
+	position: relative;
 	margin-top: 3px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
 	padding-top: 8px;
 }
 
 li.active.navitem {
-	background-color: rgb(75, 75, 75);
 	margin-top: 2px;
+	background-color: rgb(75, 75, 75);
 }
 
 ul.navbar-nav>li.active.navitem>a, ul.navbar-nav>li.active.navitem>a:HOVER {
 	border: 1px solid white;
 	background: white;
 	color: black;
-}
-
-li#me-navitem>a:HOVER {
-	/* TODO: show tooltipps */
-}
-
-li#me-navitem>a:HOVER {
-	/* TODO: show tooltipps */
 }
 
 li#me-navitem>a:HOVER {
@@ -80,8 +81,8 @@ li.navitem {
 
 li.navitem>a {
 	border: 1px solid black;
-	background: black url("../images/navitem-bg.png") repeat-x top;
 	padding: 8px 15px 4px 15px;
+	background: black url("../images/navitem-bg.png") repeat-x top;
 	font-weight: normal;
 }
 
@@ -89,29 +90,64 @@ li.navitem>a>img {
 	margin-right: 10px;
 }
 
-div#navbar-downer-shadow, div.navbar-downer-shadow {
-	position: fixed;
-	top: 80px;
-	height: 10px;
-	width: 100%;	
-	background: transparent url("../images/downer-shadow.png") repeat-x top;
-}
 
-div#navbar-downer-shadow {
-	margin: 50px 0 0 0;
+
+
+div.item-container-downer-shadow {
+	height:10px;
+	width: 100%;	
+	background: transparent url("../images/item-container-downer-shadow.png") repeat-x top;
 }
 
 div.navbar-downer-shadow {
 	margin: 0;
 }
 
-/* Content */
+div#downer-shadow {
+	margin-top: 50px;
+	width: 100%;
+/* 	height: 160px; */
+	background: transparent url("../images/downer-shadow.png") repeat-x left top;
+}
 
-div#content.container {
-	margin-top: 130px;
-	padding: 10px;
-	background: url("../images/downer-shadow.png") repeat-x top;
+/* Content (incl. Banner) */
+
+div.content.container {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding: 0px 10px 10px 10px;
+	
+	background-color: transparent;
+	background-image: url("../images/left-vertical-shadow.png"), url("../images/right-vertical-shadow.png");
+	background-position: left top, right top;
+	background-repeat: repeat-y;
+
 	text-align: left;
+}
+
+div.content.container > div.row {
+	margin-left: -10px;
+	margin-right: -10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+div#banner {
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	height: 170px;
+	padding-top: 0px;
+	padding-bottom: 10px;
+	
+	background-color: black;
+	background-image: url("../images/banner-blacked.png");
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+div#message {
+	background-color: black;
 }
 
 /* Footer */
